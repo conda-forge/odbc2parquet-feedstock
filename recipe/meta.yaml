@@ -1,5 +1,5 @@
 {% set name = "odbc2parquet" %}
-{% set version = "6.0.0" %}
+{% set version = "6.0.7" %}
 {% set build_num = 1 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pacman82/odbc2parquet/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 390f8673f1c5075d48e069fec4a664e47a08b4047addf4219b0a7c3bb7ac853e
+  sha256: bc684b2c3b1f0070431ce68413da5f520afda50cbde90d7b198423a29ad0a365
 
 build:
   number: {{ build_num }}
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}       # [unix]
+    - {{ stdlib("c") }}         # [unix]
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
   host:
