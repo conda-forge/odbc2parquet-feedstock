@@ -1,5 +1,5 @@
 {% set name = "odbc2parquet" %}
-{% set version = "8.0.0" %}
+{% set version = "8.0.1" %}
 {% set build_num = 1 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pacman82/odbc2parquet/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d0f311edd3b6386b15c1510a03c9dae088ef3ce680912545e9f3ceecce340643
+  sha256: 04d2d0e18e0a1c34d2551faccd5bb639c25132606d42bab41f47cb5de0a7f2e8
 
 build:
   number: {{ build_num }}
